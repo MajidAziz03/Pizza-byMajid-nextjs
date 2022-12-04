@@ -1,8 +1,11 @@
 import styles from "../styles/Cart.module.css";
 import Image from "next/image";
+import Navbar from '../Components/Navbar'
 
 const Cart = () => {
     return (
+        <>
+            <Navbar />
         <div className={styles.container}>
             <div className={styles.left}>
                 <table className={styles.table}>
@@ -93,7 +96,9 @@ const Cart = () => {
                     <button className={styles.button}>CHECKOUT NOW!</button>
                 </div>
             </div>
-        </div>
+            </div>
+        </>
+
     );
 };
 

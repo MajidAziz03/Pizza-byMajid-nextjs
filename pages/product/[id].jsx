@@ -1,6 +1,7 @@
 import styles from "../../styles/Product.module.css";
 import Image from "next/image";
 import { useState } from "react";
+import Navbar from '../../Components/Navbar'
 
 const Product = () => {
     const [size, setSize] = useState(0);
@@ -13,6 +14,8 @@ const Product = () => {
     };
 
     return (
+        <>
+            <Navbar />
         <div className={styles.container}>
             <div className={styles.left}>
                 <div className={styles.imgContainer}>
@@ -82,7 +85,9 @@ const Product = () => {
                     <button className={styles.button}>Add to Cart</button>
                 </div>
             </div>
-        </div>
+            </div>
+        </>
+
     );
 };
 

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Featured from '../Components/Featured'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -10,8 +11,8 @@ export default function Home() {
       <title>Pizza-Majid</title>
       <meta name="description" content="Best Pizza in the Town" />
       <link rel="icon" href="/favicon.ico" />
-    </Head>
-homepage
+      </Head>
+      <Featured />
 </>
   )
 }

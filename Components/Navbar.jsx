@@ -25,7 +25,12 @@ const Navbar = () => {
                     <li className={styles.listItem}>Contact</li>
                 </ul>
             </div>
-            <div className={styles.item}>right</div>
+            <div className={styles.item}>
+                <div className={styles.cart}>
+                    <Image src='/img/cart.png' width='30' height='30' /> 
+                    <div className={styles.counter}>3</div>
+                </div>
+            </div>
         </div>
     )
 }
